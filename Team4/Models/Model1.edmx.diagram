@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="05cddb4baae54f4e859bd3240dc86ebd" Name="Diagram1">
+        <EntityTypeShape EntityType="Team4Model.Booking_Table" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team4Model.BusDetails_Table" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team4Model.Customer_Table" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team4Model.Login_Table" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team4Model.Route_Table" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Team4Model.Schedule_Table" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="Team4Model.FK_Booking_Table_Customer_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="Team4Model.FK_Booking_Table_Schedule_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="Team4Model.FK_Schedule_Table_BusDetails_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="Team4Model.FK_Schedule_Table_Route_Table1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

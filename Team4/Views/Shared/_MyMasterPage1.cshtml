@@ -1,0 +1,32 @@
+﻿
+@model Team4.Models.Login_Table
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="~/Styles/_MyStyleSheet1.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width" />
+        <title>@ViewBag.Title</title>
+        <script src="~/Scripts/JavaScript1.js"></script>
+    </head>
+<body>
+    <div id="Main1">
+        <img src="~/Images/tiket_bus_online.gif" />
+
+    </div>
+
+    <div class="Main2">
+        @using (Html.BeginForm())
+        {
+            <table align="center">
+                <tr><td>UserName</td><td>@Html.TextBoxFor(a => a.User_ID)</td><td><input type="submit" id="NewUser" value="New User" onclick="func(this.value);" /></td></tr>
+                <tr><td>Password</td><td>@Html.TextBoxFor(a => a.Password)</td></tr>
+                <tr><td><input type="submit" id="Login" value="Login" onclick="func(this.value);" /></td></tr>
+            </table>
+        }
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
